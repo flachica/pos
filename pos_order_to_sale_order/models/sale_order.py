@@ -20,7 +20,7 @@ class SaleOrder(models.Model):
         return {
             "partner_id": order_data["partner_id"],
             "origin": _("Point of Sale %s") % (session.name),
-            "client_order_ref": order_data["name"],
+            "client_order_ref": order_data["client_order_ref"],
             "user_id": order_data["user_id"],
             "pricelist_id": order_data["pricelist_id"],
             "fiscal_position_id": order_data["fiscal_position_id"],
